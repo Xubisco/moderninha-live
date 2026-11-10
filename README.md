@@ -9,7 +9,7 @@ Uma página com todos os produtos em campanha, por categoria, e uma página por 
 - `fotos.py`: converte as fotos dos produtos para WebP em `docs/img/`.
 - `build.mjs`: gera as páginas em `docs/`.
 
-Categorias: `sofas`, `guarda-roupas`, `mesas`, `cozinhas`, `racks-bancadas`, `camas-colchoes`.
+Categorias: `sofas`, `guarda-roupas`, `mesas`, `cozinhas`, `racks-bancadas`, `camas-colchoes` e `acessorios` (para o que não se encaixa nas outras).
 
 ## Rotina
 

@@ -20,9 +20,8 @@ const CATEGORIAS = [
   ["cozinhas", "Cozinhas"],
   ["racks-bancadas", "Racks e Bancadas"],
   ["camas-colchoes", "Camas e Colchões"],
+  ["acessorios", "Acessórios"], // tudo que não se encaixa nas outras
 ];
-// Endereços antigos (da fase "uma página por live") que continuam funcionando
-const ENDERECOS_ANTIGOS = ["live", "live/2026-11-10"];
 
 const lerJson = (caminho) => JSON.parse(readFileSync(join(SITE, caminho), "utf8"));
 const produtos = lerJson("dados/produtos.json");
@@ -247,9 +246,6 @@ function paginaDoProduto(item) {
   });
 }
 
-const redirecionar = (destino) =>
-  `<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=${destino}"><title>Moderninha Móveis</title><a href="${destino}">Ver ofertas</a>\n`;
-
 // Limpa as páginas geradas (mantém as fotos já otimizadas)
 for (const pasta of ["p", "live"]) {
   if (existsSync(join(DOCS, pasta))) rmSync(join(DOCS, pasta), { recursive: true });
@@ -257,12 +253,6 @@ for (const pasta of ["p", "live"]) {
 
 gravar("index.html", paginaInicial());
 for (const item of ofertas) gravar(`p/${produtos[item.codigo].slug}/index.html`, paginaDoProduto(item));
-for (const antigo of ENDERECOS_ANTIGOS) gravar(`${antigo}/index.html`, redirecionar("/"));
-// Páginas de produto antigas (/live/2026-11-10/<produto>/) levam para a página nova do produto
-for (const item of ofertas) {
-  const slug = produtos[item.codigo].slug;
-  gravar(`live/2026-11-10/${slug}/index.html`, redirecionar(`/p/${slug}/`));
-}
 gravar("CNAME", `${DOMINIO}\n`);
 gravar(".nojekyll", "");
 writeFileSync(join(DOCS, "estilo.css"), readFileSync(join(SITE, "estilo.css")));
