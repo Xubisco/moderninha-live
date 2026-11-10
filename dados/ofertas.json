@@ -2,7 +2,7 @@
   "itens": [
     {"codigo": "8400", "esgotado": false, "ofertas": [{"parcela": 99.9, "link": ""}]},
     {"codigo": "8742", "esgotado": false, "ofertas": [{"parcela": 129.9, "link": ""}]},
-    {"codigo": "8982", "esgotado": false, "ofertas": [{"parcela": 144.9, "link": ""}]},
+    {"codigo": "8982", "esgotado": false, "ofertas": [{"parcela": 144.9, "link": "https://mpago.la/1FU1Pkj"}]},
     {"codigo": "8710", "esgotado": false, "ofertas": [{"parcela": 99.9, "link": ""}]},
     {"codigo": "8801", "esgotado": false, "ofertas": [{"parcela": 59.9, "link": ""}]},
     {"codigo": "8772", "esgotado": false, "ofertas": [{"parcela": 199.9, "link": ""}]},
