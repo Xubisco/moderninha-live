@@ -1,0 +1,20 @@
+{
+  "data": "2026-11-10",
+  "titulo": "Live de 10/11",
+  "itens": [
+    { "codigo": "8159", "esgotado": false, "ofertas": [{ "parcela": 49.90, "link": "" }] },
+    { "codigo": "8798", "esgotado": false, "ofertas": [{ "parcela": 84.90, "link": "" }] },
+    { "codigo": "8991", "esgotado": false, "ofertas": [{ "parcela": 129.90, "link": "" }] },
+    { "codigo": "8961", "esgotado": false, "ofertas": [{ "parcela": 169.00, "link": "" }] },
+    { "codigo": "8803", "esgotado": false, "ofertas": [{ "parcela": 49.90, "link": "" }] },
+    { "codigo": "8802-8800", "esgotado": false, "ofertas": [
+      { "rotulo": "Painel + Bancada", "parcela": 174.80, "link": "" },
+      { "rotulo": "Só o Painel", "parcela": 74.90, "link": "" },
+      { "rotulo": "Só a Bancada", "parcela": 99.90, "link": "" }
+    ] },
+    { "codigo": "8771", "esgotado": false, "ofertas": [{ "parcela": 179.90, "link": "" }] },
+    { "codigo": "8875", "esgotado": false, "ofertas": [{ "parcela": 99.90, "link": "" }] },
+    { "codigo": "7084", "esgotado": false, "ofertas": [{ "parcela": 139.90, "link": "" }] },
+    { "codigo": "7978", "esgotado": false, "ofertas": [{ "parcela": 79.90, "link": "" }] }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "8159": {
+    "nome": "Kit Cozinha Style",
+    "slug": "kit-cozinha-style",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/COZINHA STYLE",
+    "fotos": ["KIT COZINHA LIVE - 12X 49,90.webp", "INTERNA STYLE.webp", "DETALHE STYLE.webp", "DETALHE 2 STYLE.webp"],
+    "descricao": [
+      "O kit Style é a escolha perfeita para você que deseja uma cozinha funcional e elegante. Com uma série de benefícios, essa cozinha vai encantar os mais exigentes e se tornar o charme da sua cozinha.",
+      "Desenvolvido pela Kits Paraná com matéria-prima de alta qualidade, para garantir maior durabilidade ao móvel e praticidade no dia a dia."
+    ],
+    "caracteristicas": ["Desenvolvido em MDP", "Detalhe ripado em pintura", "6 portas", "1 gaveta", "Dobradiças metálicas", "Corrediças metálicas", "Puxadores em plástico", "Pés plásticos resistentes com regulagem"],
+    "medidas": [["Altura", "185 cm"], ["Largura", "111 cm"], ["Profundidade", "39,3 cm"]],
+    "observacao": "Não acompanha decorações, utensílios, eletrodomésticos e acessórios."
+  },
+  "8798": {
+    "nome": "Cristaleira Jurerê",
+    "slug": "cristaleira-jurere",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/CRISTALEIRA JURERE",
+    "fotos": ["CRISTALEIRA JURERÊ - 12X 84,90.webp", "INTERNO CRISTALEIRA JURERÊ - 12X 84,90.webp", "MEDIDAS CRISTALEIRA JURERÊ -12X 84,90.webp"],
+    "descricao": [
+      "A Cristaleira Jurerê, com 4 portas e 2 prateleiras, é uma peça sofisticada que une o estilo retrô ao contemporâneo.",
+      "Das quatro portas, duas são em vidro temperado e duas em MDP. A adega central tem espaço para cinco garrafas, perfeita para os amantes de vinho. As duas prateleiras em MDP organizam seus objetos, e os puxadores dourados dão um toque de elegância."
+    ],
+    "caracteristicas": ["Estrutura em MDP de 12 mm e 15 mm e MDF de 15 mm", "Vidro temperado de 5 mm", "Pés em madeira maciça", "4 portas (2 de vidro e 2 de MDP)", "Adega para 5 garrafas", "2 prateleiras", "Puxadores dourados"],
+    "medidas": [["Altura", "182,2 cm"], ["Largura", "70 cm"], ["Profundidade", "39,3 cm"]]
+  },
+  "8991": {
+    "nome": "Estofado Eros Retrátil e Reclinável",
+    "slug": "estofado-eros",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/ESTOFADO EROS",
+    "fotos": ["ESTOFADO EROS.JPEG", "ESTOFADO EROS2.JPEG", "ESTOFADO EROS3.JPEG", "ESTOFADO EROS4.JPEG"],
+    "descricao": [
+      "Fabricado com madeira de eucalipto tratada, tem os dois assentos retráteis em percinta e os dois encostos com regulagem por catracas, reclináveis em até 5 posições.",
+      "Revestido em tecido suede macio, com espuma ortopédica selada nos braços e assentos."
+    ],
+    "caracteristicas": ["Estrutura em eucalipto tratado", "2 assentos retráteis", "Encostos reclináveis em até 5 posições", "Encosto com fibra de silicone", "Suporta até 100 kg por assento", "Pés em madeira envernizada"],
+    "medidas": [["Largura", "180 cm"]],
+    "cores": "Marrom, bege e cinza. Você escolhe a cor pelo WhatsApp depois do pagamento."
+  },
+  "8961": {
+    "nome": "Mesa Sublime + 4 Cadeiras Ameile",
+    "slug": "mesa-sublime",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/MESA SUBLIME",
+    "fotos": ["WhatsApp Image 2026-11-09 at 22.34.40.jpeg", "WhatsApp Image 2026-11-09 at 22.34.40 4.jpeg", {"arquivo": "WhatsApp Image 2026-11-09 at 22.34.40 2.jpeg", "cortarTopo": 0.12}, "MESA SUBLIME.avif", "MEDIDAS CADEIRAS.avif"],
+    "descricao": [
+      "Perfeita para a sua sala de jantar, une funcionalidade, design e qualidade premium.",
+      "O tampo retangular em MDF com vidro temperado é resistente, seguro e fácil de limpar. Acompanha 4 cadeiras com assento acolchoado e encosto com fibra que imita palha, para você e seus convidados passarem horas à mesa."
+    ],
+    "caracteristicas": ["100% MDF", "Tampo com vidro temperado", "4 cadeiras com assento acolchoado", "Encosto em fibra que imita palha"],
+    "medidas": [["Mesa (largura × profundidade × altura)", "115 × 94 × 79 cm"], ["Cadeira (largura × profundidade × altura)", "47 × 43 × 90 cm"]]
+  },
+  "8803": {
+    "nome": "Rack Domos",
+    "slug": "rack-domos",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/RACK DOMOS",
+    "fotos": ["RACK DOMOS.jpg", "DETALHES RACK DOMOS.jpg", "DETALHES 2 RACK DOMOS.jpg", "MEDIDAS RACK DOMOS.jpg"],
+    "descricao": [
+      "Combina o aconchego do acabamento amadeirado com superfícies claras, numa estética equilibrada, elegante e atemporal. As linhas orgânicas e os recortes curvos nas portas suavizam o desenho e dão identidade ao móvel.",
+      "Os detalhes ripados acrescentam textura e profundidade. No centro, o nicho aberto acomoda eletrônicos e objetos decorativos. Os pés em estilo retrô trazem leveza visual e estabilidade."
+    ],
+    "caracteristicas": ["Portas em MDF", "Tampo, base e laterais em MDP", "Bordas frontais chanfradas", "2 portas deslizantes", "Nicho para eletrônicos e decoração", "Detalhe em ripado canelado", "Pés em polipropileno estilo retrô", "Suporta TV de até 60\""],
+    "medidas": [["Largura", "160 cm"], ["Profundidade", "38,5 cm"]]
+  },
+  "8802-8800": {
+    "nome": "Painel e Bancada Adele",
+    "slug": "painel-bancada-adele",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/PAINEL E BANCADA ADELE",
+    "fotos": ["PAINEL E BANCADA ADELE 2.webp", "DETALHES PAINEL E BANCADA ADELE.webp", "MEDIDAS PAINEL E BANCADA ADELE.jpg", "PAINEL E BANCADA ADELE.jpeg"],
+    "descricao": [
+      "Um conjunto que será o destaque da sua sala, com estética contemporânea e elegante. O painel tem duas abas com cantos arredondados, iluminadas por dois tubos metálicos dourados com LED, e abriga TVs de até 65\". Suporta até 40 kg.",
+      "A bancada tem tampo de cantos arredondados com bordas douradas, laterais arredondadas, duas portas com cantos curvos e prateleira de vidro no nicho central. Os pés metálicos dourados afastam o móvel do chão e facilitam a limpeza. Tem passa-fios para organizar os cabos.",
+      "Produzido 100% em MDF de reflorestamento. Painel e bancada podem ser comprados separados ou juntos."
+    ],
+    "caracteristicas": ["100% MDF", "Cantos arredondados", "Luminárias de LED em metal dourado", "Pés metálicos cilíndricos dourados", "2 portas de giro com dobradiças com amortecimento", "Nicho central com prateleira de vidro", "Frisos chanfrados", "Suporta TVs de até 65\""],
+    "medidas": [["Largura", "180 cm"], ["Altura do painel", "132 cm"], ["Altura da bancada", "57 cm"], ["Profundidade da bancada", "45 cm"]]
+  },
+  "8771": {
+    "nome": "Roupeiro Ipanema",
+    "slug": "roupeiro-ipanema",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/ROUPEIRO IPANEMA",
+    "fotos": ["ROUPEIRO IPANEMA.jpg", "DETALHE INTERNA IPANEMA.jpg", "DETALHE IPANEMA.jpg", "DETALHE 2 IPANEMA.jpg"],
+    "descricao": [
+      "Mais do que um roupeiro, uma peça sofisticada fabricada 100% em MDF, com estrutura resistente e design elegante.",
+      "Sistema de montagem Flex: você escolhe a cor na hora da montagem (Cinamomo total ou Cinamomo/Off White)."
+    ],
+    "caracteristicas": ["100% MDF", "Kit de pés", "Perfil das portas em madeira", "Corrediças telescópicas", "Espelhos", "Cabideiro de alumínio", "4 gavetas internas", "Divisória ele e ela"],
+    "medidas": [["Altura", "223 cm"], ["Largura", "220 cm"], ["Profundidade", "55 cm"]]
+  },
+  "8875": {
+    "nome": "Base + Colchão Supremo Casal",
+    "slug": "base-colchao-supremo-casal",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/BASE+COLC SUPREMO",
+    "fotos": ["BASE+COLC SUPREMO CASAL3.png", "BASE+COLC SUPREMO CASAL2.png", "BASE+COLC SUPREMO CASAL4.png", "BASE+COLC SUPREMO CASAL5.png"],
+    "descricao": [
+      "Colchão em espuma ortopédica e molas ensacadas individualmente, com suporte de até 150 kg em cada lado.",
+      "Tampo em tecido de malha bordado, lateral em poliéster e base em suede."
+    ],
+    "caracteristicas": ["Molas ensacadas individualmente", "Espuma ortopédica", "Suporta até 150 kg por lado", "Tampo em malha bordada", "Base em suede"],
+    "medidas": [["Colchão (largura × comprimento × altura)", "138 × 188 × 30 cm"], ["Base (largura × comprimento × altura)", "138 × 188 × 30 cm"]]
+  },
+  "7084": {
+    "nome": "Roupeiro Anjos",
+    "slug": "roupeiro-anjos",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/ROUPEIRO ANJOS",
+    "fotos": ["ANJOS.webp", "ROUPEIRO ANJOS ABERTO.webp", "ANJOS MEDIDAS.webp"],
+    "descricao": [
+      "Combina 9 gavetas, 1 prateleira e 3 cabideiros para guardar todas as roupas com organização e visibilidade. As roldanas em aço e o trilho em alumínio deixam as portas deslizarem com facilidade.",
+      "Os maleiros guardam peças maiores, como malas, cobertores e edredons. O design interno atende às necessidades de um casal, e as 9 gavetas com corrediças metálicas são ideais para pijamas, shorts, meias e roupas de academia."
+    ],
+    "caracteristicas": ["3 portas deslizantes com espelho", "9 gavetas com corrediças metálicas", "1 prateleira", "3 cabideiros", "Maleiros", "Roldanas em aço e trilho em alumínio"],
+    "medidas": [["Altura", "208 cm"], ["Largura", "191 cm"], ["Profundidade", "54 cm"]]
+  },
+  "7978": {
+    "nome": "Cozinha Completa Nala",
+    "slug": "cozinha-completa-nala",
+    "pastaFotos": "DADOS/LIIVE 101126/PRODUTOS LIVE BEBERIBE/COZINHA NALA",
+    "fotos": ["COZINHA COMPLETA NALA - 12X 79,90.jpg", "INTERNA COZINHA NALA COMPLETA - 12X 79,90.png", "DETALHES COZINHA NALA - 12X 79,90.png", "DETALHES 2 COZINHA NALA - 12X 79,90.png", "DETALHES 3 COZINHA NALA - 12X 79,90.png"],
+    "descricao": [
+      "Produzida com madeira reconstituída de reflorestamento. São oito portas, sendo uma com vidro reflecta que destaca a peça no ambiente. Os puxadores ergonômicos têm acabamento metalizado.",
+      "Disponível na cor Freijó/Off White, com detalhes em impressão 3D ripada."
+    ],
+    "caracteristicas": ["4 módulos: aéreo de geladeira com 2 portas, aéreo superior com vidro, paneleiro com 4 portas e balcão com 2 portas e 2 gavetas", "8 portas, uma com vidro reflecta", "Gavetas com corrediças metálicas", "Puxadores com acabamento metalizado"],
+    "medidas": [["Altura", "193 cm"], ["Largura", "221,6 cm"], ["Profundidade", "36,3 cm"]]
+  }
+}
