@@ -12,7 +12,15 @@
 <meta property="og:image" content="https://live.moderninhamoveis.com.br/img/kit-cozinha-style/1.webp">
 <meta name="theme-color" content="#c8205f">
 <link rel="stylesheet" href="../../estilo.css">
-
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '353278078870809');
+fbq('track', 'PageView');
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-pixel]');
+  if (el) fbq('track', el.dataset.pixel, JSON.parse(el.dataset.pixelDados || '{}'));
+});
+</script><script>fbq('track', 'ViewContent', {"content_ids":["8159"],"content_name":"Kit Cozinha Style","content_type":"product","value":698.8,"currency":"BRL"});</script>
 </head>
 <body>
 <header class="topo"><a class="marca" href="../../">moderninha <span>móveis</span></a></header>
