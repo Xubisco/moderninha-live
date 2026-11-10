@@ -155,7 +155,9 @@ function paginaDoProduto(live, item) {
     <div class="galeria" id="galeria">
       ${galeria}
     </div>
-    ${fotos.length > 1 ? `<span class="contador" id="contador">1/${fotos.length}</span>` : ""}
+    ${fotos.length > 1 ? `<button class="seta anterior" id="anterior" type="button" aria-label="Foto anterior" disabled>‹</button>
+    <button class="seta proxima" id="proxima" type="button" aria-label="Próxima foto">›</button>
+    <span class="contador" id="contador">1/${fotos.length}</span>` : ""}
   </div>
   <h1>${esc(produto.nome)}</h1>
   <p class="codigo">Cód. ${esc(item.codigo.replace("-", " + "))}</p>
@@ -182,10 +184,25 @@ function paginaDoProduto(live, item) {
 <script>
   const galeria = document.getElementById("galeria");
   const contador = document.getElementById("contador");
-  if (contador) galeria.addEventListener("scroll", () => {
-    const atual = Math.round(galeria.scrollLeft / galeria.clientWidth) + 1;
-    contador.textContent = atual + "/" + galeria.children.length;
-  }, { passive: true });
+  const anterior = document.getElementById("anterior");
+  const proxima = document.getElementById("proxima");
+  if (contador) {
+    const total = galeria.children.length;
+    const atual = () => Math.round(galeria.scrollLeft / galeria.clientWidth);
+    const irPara = (i) => galeria.scrollTo({ left: Math.max(0, Math.min(total - 1, i)) * galeria.clientWidth, behavior: "smooth" });
+    galeria.addEventListener("scroll", () => {
+      const i = atual();
+      contador.textContent = i + 1 + "/" + total;
+      anterior.disabled = i === 0;
+      proxima.disabled = i === total - 1;
+    }, { passive: true });
+    anterior.addEventListener("click", () => irPara(atual() - 1));
+    proxima.addEventListener("click", () => irPara(atual() + 1));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") irPara(atual() - 1);
+      if (e.key === "ArrowRight") irPara(atual() + 1);
+    });
+  }
 </script>`,
   });
 }

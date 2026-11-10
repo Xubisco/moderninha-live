@@ -24,6 +24,8 @@
       <img src="../../../img/roupeiro-ipanema/3.webp" alt="Roupeiro Ipanema, foto 3 de 4" loading="lazy" decoding="async">
       <img src="../../../img/roupeiro-ipanema/4.webp" alt="Roupeiro Ipanema, foto 4 de 4" loading="lazy" decoding="async">
     </div>
+    <button class="seta anterior" id="anterior" type="button" aria-label="Foto anterior" disabled>‹</button>
+    <button class="seta proxima" id="proxima" type="button" aria-label="Próxima foto">›</button>
     <span class="contador" id="contador">1/4</span>
   </div>
   <h1>Roupeiro Ipanema</h1>
@@ -62,10 +64,25 @@
 <script>
   const galeria = document.getElementById("galeria");
   const contador = document.getElementById("contador");
-  if (contador) galeria.addEventListener("scroll", () => {
-    const atual = Math.round(galeria.scrollLeft / galeria.clientWidth) + 1;
-    contador.textContent = atual + "/" + galeria.children.length;
-  }, { passive: true });
+  const anterior = document.getElementById("anterior");
+  const proxima = document.getElementById("proxima");
+  if (contador) {
+    const total = galeria.children.length;
+    const atual = () => Math.round(galeria.scrollLeft / galeria.clientWidth);
+    const irPara = (i) => galeria.scrollTo({ left: Math.max(0, Math.min(total - 1, i)) * galeria.clientWidth, behavior: "smooth" });
+    galeria.addEventListener("scroll", () => {
+      const i = atual();
+      contador.textContent = i + 1 + "/" + total;
+      anterior.disabled = i === 0;
+      proxima.disabled = i === total - 1;
+    }, { passive: true });
+    anterior.addEventListener("click", () => irPara(atual() - 1));
+    proxima.addEventListener("click", () => irPara(atual() + 1));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") irPara(atual() - 1);
+      if (e.key === "ArrowRight") irPara(atual() + 1);
+    });
+  }
 </script>
 <footer class="rodape">
   <p>Moderninha Móveis · <a href="https://www.instagram.com/moderninhamoveis/">@moderninhamoveis</a></p>
