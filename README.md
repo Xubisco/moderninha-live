@@ -1,6 +1,6 @@
 # Site de ofertas da Moderninha Móveis
 
-Site estático publicado em https://live.moderninhamoveis.com.br pelo GitHub Pages (pasta `docs/`).
+Site estático publicado em https://ofertas.moderninhamoveis.com.br pelo GitHub Pages (pasta `docs/`).
 Uma página com todos os produtos em campanha, por categoria, e uma página por produto em `/p/<produto>/`.
 
 - `dados/produtos.json`: cadastro dos produtos (categoria, fotos, descrição, características, medidas), pelo código do ERP.

@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const SITE = dirname(fileURLToPath(import.meta.url));
 const DOCS = join(SITE, "docs");
-const DOMINIO = "live.moderninhamoveis.com.br";
+const DOMINIO = "ofertas.moderninhamoveis.com.br";
 const URL_BASE = `https://${DOMINIO}`;
 const WHATSAPP = "5581994998461";
 const INSTAGRAM = "moderninhamoveis";
