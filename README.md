@@ -14,7 +14,8 @@ Categorias: `sofas`, `guarda-roupas`, `mesas`, `cozinhas`, `racks-bancadas`, `ca
 ## Rotina
 
 1. Produto novo: cadastrar em `dados/produtos.json` e incluir em `dados/ofertas.json`.
-2. Preço mudou: trocar a parcela e o link em `dados/ofertas.json`.
+2. Preço mudou: trocar a parcela em `dados/ofertas.json`.
+   Link novo: `python link.py <codigo> <url> [n]` grava o link no ofertas.json e no fim do TXT do produto (n = qual oferta, ex.: Adele 1, 2, 3).
 3. `python fotos.py` e `node build.mjs` (o build lista os botões sem link).
 4. `git add -A && git commit -m "..." && git push`. O site atualiza em cerca de 1 minuto.
 
