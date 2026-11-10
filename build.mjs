@@ -259,6 +259,33 @@ gravar("CNAME", `${DOMINIO}\n`);
 gravar(".nojekyll", "");
 writeFileSync(join(DOCS, "estilo.css"), readFileSync(join(SITE, "estilo.css")));
 
+// Lista de links para consulta da equipe, na raiz do projeto (Ecomerce)
+function listaDeLinks() {
+  const linhas = [
+    "LINKS DO MERCADO PAGO - MODERNINHA MÓVEIS",
+    `Gerado em ${new Date().toLocaleString("pt-BR", { timeZone: "America/Recife" })} pelo build do site. Não edite à mão: mude dados/ofertas.json e rode node build.mjs.`,
+    `Valor do link = parcela x ${PARCELAS} + frete de ${moeda(FRETE)}. Site: ${URL_BASE}`,
+  ];
+  for (const [id, nome] of CATEGORIAS) {
+    const itens = ofertas.filter((i) => produtos[i.codigo].categoria === id);
+    if (!itens.length) continue;
+    linhas.push("", `===== ${nome.toUpperCase()} =====`);
+    for (const item of itens) {
+      const produto = produtos[item.codigo];
+      linhas.push("", `Cód. ${item.codigo} - ${produto.nome}${item.esgotado ? " (ESGOTADO)" : ""}`);
+      for (const oferta of item.ofertas) {
+        const p = precos(oferta.parcela);
+        const rotulo = oferta.rotulo ? `${oferta.rotulo}: ` : "";
+        linhas.push(`  ${rotulo}12x ${moeda(oferta.parcela)} | produto ${moeda(p.produto)} + frete = ${moeda(p.total)} | ${oferta.link || "SEM LINK"}`);
+      }
+      linhas.push(`  Página: ${URL_BASE}/p/${produto.slug}/`);
+    }
+  }
+  const texto = linhas.join("\r\n").replace(/ /g, " ") + "\r\n";
+  writeFileSync(join(SITE, "..", "LINKS-MERCADO-PAGO.txt"), "﻿" + texto);
+}
+listaDeLinks();
+
 console.log(`${ofertas.length} produtos em oferta. Pixel da Meta: ${config.pixelMeta || "não configurado"}.`);
 if (avisos.length) {
   console.log(`\nAtenção, ${avisos.length} botão(ões) sem link do Mercado Pago:`);
