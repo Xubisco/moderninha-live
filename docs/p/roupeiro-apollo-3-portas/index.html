@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roupeiro Apollo 3 Portas | Moderninha Móveis</title>
+<meta name="description" content="Roupeiro Apollo 3 Portas em 12x de R$ 129,90 sem juros na Moderninha Móveis.">
+<meta property="og:title" content="Roupeiro Apollo 3 Portas | Moderninha Móveis">
+<meta property="og:description" content="Roupeiro Apollo 3 Portas em 12x de R$ 129,90 sem juros na Moderninha Móveis.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://live.moderninhamoveis.com.br/p/roupeiro-apollo-3-portas/">
+<meta property="og:image" content="https://live.moderninhamoveis.com.br/img/roupeiro-apollo-3-portas/1.webp">
+<meta name="theme-color" content="#c8205f">
+<link rel="stylesheet" href="../../estilo.css">
+
+</head>
+<body>
+<header class="topo"><a class="marca" href="../../">moderninha <span>móveis</span></a></header>
+<main class="conteudo produto">
+  <a class="voltar" href="../../#guarda-roupas">← Ver todas as ofertas</a>
+  <div class="galeria-caixa">
+    <div class="galeria" id="galeria">
+      <img src="../../img/roupeiro-apollo-3-portas/1.webp" alt="Roupeiro Apollo 3 Portas, foto 1 de 2" decoding="async">
+      <img src="../../img/roupeiro-apollo-3-portas/2.webp" alt="Roupeiro Apollo 3 Portas, foto 2 de 2" loading="lazy" decoding="async">
+    </div>
+    <button class="seta anterior" id="anterior" type="button" aria-label="Foto anterior" disabled>‹</button>
+    <button class="seta proxima" id="proxima" type="button" aria-label="Próxima foto">›</button>
+    <span class="contador" id="contador">1/2</span>
+  </div>
+  <h1>Roupeiro Apollo 3 Portas</h1>
+  <p class="codigo">Cód. 8742</p>
+  
+  <div class="oferta">
+    
+    <p class="parcela">12x de <strong>R$ 129,90</strong> <span>sem juros</span></p>
+    <p class="conta">Produto R$ 1.558,80 + frete R$ 100,00</p>
+    <p class="total">Total R$ 1.658,80 em 12x de R$ 138,23 sem juros</p>
+    <span class="botao desativado">Link em breve</span>
+  </div>
+  <p class="nota"><strong>Cores:</strong> Cinamomo/Off White ou Branco. Você escolhe a cor pelo WhatsApp depois do pagamento.</p>
+  <p class="nota">Depois de pagar, envie o comprovante pelo WhatsApp para combinar endereço e entrega.</p>
+  <a class="botao whatsapp" href="https://wa.me/5581994998461?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Roupeiro%20Apollo%203%20Portas%20(c%C3%B3d.%208742)." target="_blank" rel="noopener" data-pixel="Contact">Tirar dúvidas no WhatsApp</a>
+  <section class="bloco">
+    <h2>Descrição</h2>
+    <p>Projetado para o dia a dia, o Roupeiro Apollo tem distribuição interna inteligente para organizar roupas, calçados, acessórios e roupas de cama. As três portas dão amplo acesso ao interior, e as quatro gavetas guardam peças menores com praticidade.</p>
+    <p>O espelho integrado amplia visualmente o ambiente. Produzido em MDP com pintura UV, que protege contra o desgaste e facilita a limpeza. Os pés elevam o móvel do chão e protegem a base contra a umidade.</p>
+  </section>
+  <section class="bloco">
+    <h2>Características</h2>
+    <ul><li>3 portas deslizantes</li><li>Espelho integrado</li><li>4 gavetas</li><li>MDP com pintura UV</li><li>Dobradiças e corrediças metálicas</li><li>Pés que elevam o móvel do chão</li></ul>
+  </section>
+  <section class="bloco">
+    <h2>Medidas</h2>
+    <table class="medidas"><tr><th>Altura</th><td>205 cm</td></tr><tr><th>Largura</th><td>180 cm</td></tr><tr><th>Profundidade</th><td>48,5 cm</td></tr></table>
+    
+  </section>
+  <section class="bloco entrega">
+    <h2>Entrega</h2>
+    <p>Frete fixo de R$ 100,00, já incluído no pagamento. Entregamos em: Recife, Jaboatão, Olinda, Paulista, Abreu e Lima, Camaragibe, São Lourenço.</p>
+    <p>Depois de pagar, envie o comprovante pelo WhatsApp para combinar endereço e entrega.</p>
+  </section>
+</main>
+<script>
+  const galeria = document.getElementById("galeria");
+  const contador = document.getElementById("contador");
+  const anterior = document.getElementById("anterior");
+  const proxima = document.getElementById("proxima");
+  if (contador) {
+    const total = galeria.children.length;
+    const atual = () => Math.round(galeria.scrollLeft / galeria.clientWidth);
+    const irPara = (i) => galeria.scrollTo({ left: Math.max(0, Math.min(total - 1, i)) * galeria.clientWidth, behavior: "smooth" });
+    galeria.addEventListener("scroll", () => {
+      const i = atual();
+      contador.textContent = i + 1 + "/" + total;
+      anterior.disabled = i === 0;
+      proxima.disabled = i === total - 1;
+    }, { passive: true });
+    anterior.addEventListener("click", () => irPara(atual() - 1));
+    proxima.addEventListener("click", () => irPara(atual() + 1));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") irPara(atual() - 1);
+      if (e.key === "ArrowRight") irPara(atual() + 1);
+    });
+  }
+</script>
+<footer class="rodape">
+  <p>Moderninha Móveis · <a href="https://www.instagram.com/moderninhamoveis/">@moderninhamoveis</a></p>
+  <p><a href="https://wa.me/5581994998461?text=Ol%C3%A1!%20Vim%20pelo%20site%20de%20ofertas." data-pixel="Contact">Fale conosco pelo WhatsApp</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesa Dakota 90x90 + 4 Cadeiras Londres | Moderninha Móveis</title>
+<meta name="description" content="Mesa Dakota 90x90 + 4 Cadeiras Londres em 12x de R$ 99,90 sem juros na Moderninha Móveis.">
+<meta property="og:title" content="Mesa Dakota 90x90 + 4 Cadeiras Londres | Moderninha Móveis">
+<meta property="og:description" content="Mesa Dakota 90x90 + 4 Cadeiras Londres em 12x de R$ 99,90 sem juros na Moderninha Móveis.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://live.moderninhamoveis.com.br/p/mesa-dakota-90x90/">
+<meta property="og:image" content="https://live.moderninhamoveis.com.br/img/mesa-dakota-90x90/1.webp">
+<meta name="theme-color" content="#c8205f">
+<link rel="stylesheet" href="../../estilo.css">
+
+</head>
+<body>
+<header class="topo"><a class="marca" href="../../">moderninha <span>móveis</span></a></header>
+<main class="conteudo produto">
+  <a class="voltar" href="../../#mesas">← Ver todas as ofertas</a>
+  <div class="galeria-caixa">
+    <div class="galeria" id="galeria">
+      <img src="../../img/mesa-dakota-90x90/1.webp" alt="Mesa Dakota 90x90 + 4 Cadeiras Londres, foto 1 de 6" decoding="async">
+      <img src="../../img/mesa-dakota-90x90/2.webp" alt="Mesa Dakota 90x90 + 4 Cadeiras Londres, foto 2 de 6" loading="lazy" decoding="async">
+      <img src="../../img/mesa-dakota-90x90/3.webp" alt="Mesa Dakota 90x90 + 4 Cadeiras Londres, foto 3 de 6" loading="lazy" decoding="async">
+      <img src="../../img/mesa-dakota-90x90/4.webp" alt="Mesa Dakota 90x90 + 4 Cadeiras Londres, foto 4 de 6" loading="lazy" decoding="async">
+      <img src="../../img/mesa-dakota-90x90/5.webp" alt="Mesa Dakota 90x90 + 4 Cadeiras Londres, foto 5 de 6" loading="lazy" decoding="async">
+      <img src="../../img/mesa-dakota-90x90/6.webp" alt="Mesa Dakota 90x90 + 4 Cadeiras Londres, foto 6 de 6" loading="lazy" decoding="async">
+    </div>
+    <button class="seta anterior" id="anterior" type="button" aria-label="Foto anterior" disabled>‹</button>
+    <button class="seta proxima" id="proxima" type="button" aria-label="Próxima foto">›</button>
+    <span class="contador" id="contador">1/6</span>
+  </div>
+  <h1>Mesa Dakota 90x90 + 4 Cadeiras Londres</h1>
+  <p class="codigo">Cód. 8710</p>
+  
+  <div class="oferta">
+    
+    <p class="parcela">12x de <strong>R$ 99,90</strong> <span>sem juros</span></p>
+    <p class="conta">Produto R$ 1.198,80 + frete R$ 100,00</p>
+    <p class="total">Total R$ 1.298,80 em 12x de R$ 108,23 sem juros</p>
+    <span class="botao desativado">Link em breve</span>
+  </div>
+  
+  <p class="nota">Depois de pagar, envie o comprovante pelo WhatsApp para combinar endereço e entrega.</p>
+  <a class="botao whatsapp" href="https://wa.me/5581994998461?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Mesa%20Dakota%2090x90%20%2B%204%20Cadeiras%20Londres%20(c%C3%B3d.%208710)." target="_blank" rel="noopener" data-pixel="Contact">Tirar dúvidas no WhatsApp</a>
+  <section class="bloco">
+    <h2>Descrição</h2>
+    <p>Se você busca conforto e elegância para as refeições do dia a dia ou para reunir família e amigos, o conjunto Mesa Dakota 90x90 com 4 Cadeiras Londres é a escolha certa.</p>
+    <p>Com design moderno e estrutura resistente, cria um ambiente aconchegante e sofisticado na sua sala de jantar.</p>
+  </section>
+  <section class="bloco">
+    <h2>Características</h2>
+    <ul><li>Tampo de vidro de 90 × 90 cm, ideal para espaços compactos</li><li>4 cadeiras com estrutura em MDF de 25 mm</li><li>Assentos estofados com espuma D23</li><li>Revestimento em veludo</li></ul>
+  </section>
+  <section class="bloco">
+    <h2>Medidas</h2>
+    <table class="medidas"><tr><th>Mesa (tampo)</th><td>90 × 90 cm</td></tr></table>
+    
+  </section>
+  <section class="bloco entrega">
+    <h2>Entrega</h2>
+    <p>Frete fixo de R$ 100,00, já incluído no pagamento. Entregamos em: Recife, Jaboatão, Olinda, Paulista, Abreu e Lima, Camaragibe, São Lourenço.</p>
+    <p>Depois de pagar, envie o comprovante pelo WhatsApp para combinar endereço e entrega.</p>
+  </section>
+</main>
+<script>
+  const galeria = document.getElementById("galeria");
+  const contador = document.getElementById("contador");
+  const anterior = document.getElementById("anterior");
+  const proxima = document.getElementById("proxima");
+  if (contador) {
+    const total = galeria.children.length;
+    const atual = () => Math.round(galeria.scrollLeft / galeria.clientWidth);
+    const irPara = (i) => galeria.scrollTo({ left: Math.max(0, Math.min(total - 1, i)) * galeria.clientWidth, behavior: "smooth" });
+    galeria.addEventListener("scroll", () => {
+      const i = atual();
+      contador.textContent = i + 1 + "/" + total;
+      anterior.disabled = i === 0;
+      proxima.disabled = i === total - 1;
+    }, { passive: true });
+    anterior.addEventListener("click", () => irPara(atual() - 1));
+    proxima.addEventListener("click", () => irPara(atual() + 1));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") irPara(atual() - 1);
+      if (e.key === "ArrowRight") irPara(atual() + 1);
+    });
+  }
+</script>
+<footer class="rodape">
+  <p>Moderninha Móveis · <a href="https://www.instagram.com/moderninhamoveis/">@moderninhamoveis</a></p>
+  <p><a href="https://wa.me/5581994998461?text=Ol%C3%A1!%20Vim%20pelo%20site%20de%20ofertas." data-pixel="Contact">Fale conosco pelo WhatsApp</a></p>
+</footer>
+</body>
+</html>

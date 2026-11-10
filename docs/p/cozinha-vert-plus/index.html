@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cozinha Completa Vert Plus | Moderninha Móveis</title>
+<meta name="description" content="Cozinha Completa Vert Plus em 12x de R$ 99,90 sem juros na Moderninha Móveis.">
+<meta property="og:title" content="Cozinha Completa Vert Plus | Moderninha Móveis">
+<meta property="og:description" content="Cozinha Completa Vert Plus em 12x de R$ 99,90 sem juros na Moderninha Móveis.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://live.moderninhamoveis.com.br/p/cozinha-vert-plus/">
+<meta property="og:image" content="https://live.moderninhamoveis.com.br/img/cozinha-vert-plus/1.webp">
+<meta name="theme-color" content="#c8205f">
+<link rel="stylesheet" href="../../estilo.css">
+
+</head>
+<body>
+<header class="topo"><a class="marca" href="../../">moderninha <span>móveis</span></a></header>
+<main class="conteudo produto">
+  <a class="voltar" href="../../#cozinhas">← Ver todas as ofertas</a>
+  <div class="galeria-caixa">
+    <div class="galeria" id="galeria">
+      <img src="../../img/cozinha-vert-plus/1.webp" alt="Cozinha Completa Vert Plus, foto 1 de 6" decoding="async">
+      <img src="../../img/cozinha-vert-plus/2.webp" alt="Cozinha Completa Vert Plus, foto 2 de 6" loading="lazy" decoding="async">
+      <img src="../../img/cozinha-vert-plus/3.webp" alt="Cozinha Completa Vert Plus, foto 3 de 6" loading="lazy" decoding="async">
+      <img src="../../img/cozinha-vert-plus/4.webp" alt="Cozinha Completa Vert Plus, foto 4 de 6" loading="lazy" decoding="async">
+      <img src="../../img/cozinha-vert-plus/5.webp" alt="Cozinha Completa Vert Plus, foto 5 de 6" loading="lazy" decoding="async">
+      <img src="../../img/cozinha-vert-plus/6.webp" alt="Cozinha Completa Vert Plus, foto 6 de 6" loading="lazy" decoding="async">
+    </div>
+    <button class="seta anterior" id="anterior" type="button" aria-label="Foto anterior" disabled>‹</button>
+    <button class="seta proxima" id="proxima" type="button" aria-label="Próxima foto">›</button>
+    <span class="contador" id="contador">1/6</span>
+  </div>
+  <h1>Cozinha Completa Vert Plus</h1>
+  <p class="codigo">Cód. 8400</p>
+  
+  <div class="oferta">
+    
+    <p class="parcela">12x de <strong>R$ 99,90</strong> <span>sem juros</span></p>
+    <p class="conta">Produto R$ 1.198,80 + frete R$ 100,00</p>
+    <p class="total">Total R$ 1.298,80 em 12x de R$ 108,23 sem juros</p>
+    <span class="botao desativado">Link em breve</span>
+  </div>
+  
+  <p class="nota">Depois de pagar, envie o comprovante pelo WhatsApp para combinar endereço e entrega.</p>
+  <a class="botao whatsapp" href="https://wa.me/5581994998461?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Cozinha%20Completa%20Vert%20Plus%20(c%C3%B3d.%208400)." target="_blank" rel="noopener" data-pixel="Contact">Tirar dúvidas no WhatsApp</a>
+  <section class="bloco">
+    <h2>Descrição</h2>
+    <p>A Cozinha Vert Plus é a escolha perfeita para quem busca sofisticação e funcionalidade. Produzida em MDF, oferece resistência e durabilidade para o dia a dia.</p>
+    <p>Os puxadores de alumínio com pintura epóxi dão um toque moderno, e as corrediças telescópicas deixam a gaveta deslizar com suavidade. O vidro incolor e a textura cristalo trazem leveza, e os nichos decorativos unem praticidade e estilo.</p>
+  </section>
+  <section class="bloco">
+    <h2>Características</h2>
+    <ul><li>Produzida em MDF</li><li>Puxadores de alumínio com pintura epóxi</li><li>Gaveta com corrediças telescópicas</li><li>Vidro incolor e textura cristalo</li><li>Nichos decorativos</li><li>Dobradiças 100% metálicas</li><li>Portas passantes</li><li>Pés reguláveis</li></ul>
+  </section>
+  <section class="bloco">
+    <h2>Medidas</h2>
+    <table class="medidas"><tr><th>Altura</th><td>206,7 cm</td></tr><tr><th>Largura</th><td>250,7 cm</td></tr><tr><th>Profundidade</th><td>41,8 cm</td></tr></table>
+    
+  </section>
+  <section class="bloco entrega">
+    <h2>Entrega</h2>
+    <p>Frete fixo de R$ 100,00, já incluído no pagamento. Entregamos em: Recife, Jaboatão, Olinda, Paulista, Abreu e Lima, Camaragibe, São Lourenço.</p>
+    <p>Depois de pagar, envie o comprovante pelo WhatsApp para combinar endereço e entrega.</p>
+  </section>
+</main>
+<script>
+  const galeria = document.getElementById("galeria");
+  const contador = document.getElementById("contador");
+  const anterior = document.getElementById("anterior");
+  const proxima = document.getElementById("proxima");
+  if (contador) {
+    const total = galeria.children.length;
+    const atual = () => Math.round(galeria.scrollLeft / galeria.clientWidth);
+    const irPara = (i) => galeria.scrollTo({ left: Math.max(0, Math.min(total - 1, i)) * galeria.clientWidth, behavior: "smooth" });
+    galeria.addEventListener("scroll", () => {
+      const i = atual();
+      contador.textContent = i + 1 + "/" + total;
+      anterior.disabled = i === 0;
+      proxima.disabled = i === total - 1;
+    }, { passive: true });
+    anterior.addEventListener("click", () => irPara(atual() - 1));
+    proxima.addEventListener("click", () => irPara(atual() + 1));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") irPara(atual() - 1);
+      if (e.key === "ArrowRight") irPara(atual() + 1);
+    });
+  }
+</script>
+<footer class="rodape">
+  <p>Moderninha Móveis · <a href="https://www.instagram.com/moderninhamoveis/">@moderninhamoveis</a></p>
+  <p><a href="https://wa.me/5581994998461?text=Ol%C3%A1!%20Vim%20pelo%20site%20de%20ofertas." data-pixel="Contact">Fale conosco pelo WhatsApp</a></p>
+</footer>
+</body>
+</html>

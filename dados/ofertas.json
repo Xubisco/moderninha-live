@@ -1,0 +1,22 @@
+{
+  "itens": [
+    {"codigo": "8400", "esgotado": false, "ofertas": [{"parcela": 99.9, "link": ""}]},
+    {"codigo": "8742", "esgotado": false, "ofertas": [{"parcela": 129.9, "link": ""}]},
+    {"codigo": "8982", "esgotado": false, "ofertas": [{"parcela": 144.9, "link": ""}]},
+    {"codigo": "8710", "esgotado": false, "ofertas": [{"parcela": 99.9, "link": ""}]},
+    {"codigo": "8801", "esgotado": false, "ofertas": [{"parcela": 59.9, "link": ""}]},
+    {"codigo": "8772", "esgotado": false, "ofertas": [{"parcela": 199.9, "link": ""}]},
+    {"codigo": "8771", "esgotado": false, "ofertas": [{"parcela": 179.9, "link": ""}]},
+    {"codigo": "8875", "esgotado": false, "ofertas": [{"parcela": 99.9, "link": ""}]},
+    {"codigo": "7724", "esgotado": false, "ofertas": [{"parcela": 124.9, "link": ""}]},
+    {"codigo": "7786", "esgotado": false, "ofertas": [{"parcela": 29.9, "link": ""}]},
+    {"codigo": "8159", "esgotado": false, "ofertas": [{"parcela": 49.9, "link": ""}]},
+    {"codigo": "8798", "esgotado": false, "ofertas": [{"parcela": 84.9, "link": ""}]},
+    {"codigo": "8991", "esgotado": false, "ofertas": [{"parcela": 129.9, "link": ""}]},
+    {"codigo": "8961", "esgotado": false, "ofertas": [{"parcela": 169.0, "link": ""}]},
+    {"codigo": "8803", "esgotado": false, "ofertas": [{"parcela": 49.9, "link": ""}]},
+    {"codigo": "8802-8800", "esgotado": false, "ofertas": [{"rotulo": "Painel + Bancada", "parcela": 174.8, "link": ""}, {"rotulo": "Só o Painel", "parcela": 74.9, "link": ""}, {"rotulo": "Só a Bancada", "parcela": 99.9, "link": ""}]},
+    {"codigo": "7084", "esgotado": false, "ofertas": [{"parcela": 139.9, "link": ""}]},
+    {"codigo": "7978", "esgotado": false, "ofertas": [{"parcela": 79.9, "link": ""}]}
+  ]
+}

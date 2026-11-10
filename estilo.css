@@ -26,14 +26,22 @@ h1, h2, h3 { line-height: 1.2; }
 .chamada h1 { margin: 0; font-size: 26px; }
 .chamada h1 span { color: var(--marca); }
 .chamada p { max-width: 520px; margin: 8px auto 0; color: var(--suave); }
+.chamada .local { color: var(--texto); font-weight: 600; }
 
+.atalhos { position: sticky; top: 52px; z-index: 9; display: flex; gap: 8px; overflow-x: auto; padding: 10px 16px; background: var(--fundo); border-bottom: 1px solid var(--linha); scrollbar-width: none; }
+.atalhos::-webkit-scrollbar { display: none; }
+.atalhos a { flex: 0 0 auto; padding: 7px 14px; border: 1px solid var(--linha); border-radius: 99px; background: var(--card); font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.atalhos a:hover { border-color: var(--marca); color: var(--marca); }
+@media (min-width: 720px) { .atalhos { justify-content: center; } }
+.categoria { scroll-margin-top: 110px; margin-bottom: 28px; }
+.categoria > h2 { margin: 0 0 12px; font-size: 22px; }
 .grade { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 @media (min-width: 720px) { .grade { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
 .card { display: flex; flex-direction: column; overflow: hidden; background: var(--card); border-radius: 12px; box-shadow: 0 1px 3px rgba(0, 0, 0, .08); text-decoration: none; }
 .card-foto { position: relative; aspect-ratio: 1; background: #fff; }
 .card-foto img { width: 100%; height: 100%; object-fit: cover; }
 .card-info { display: flex; flex: 1; flex-direction: column; padding: 10px 12px 12px; }
-.card-info h2 { margin: 0 0 6px; font-size: 15px; font-weight: 600; }
+.card-info h3 { margin: 0 0 6px; font-size: 15px; font-weight: 600; }
 .card-preco { margin: auto 0 0; color: var(--marca); font-size: 19px; font-weight: 800; }
 .card-preco small { display: block; color: var(--suave); font-size: 12px; font-weight: 500; }
 .card-juros { margin: 0; color: var(--suave); font-size: 12px; }
