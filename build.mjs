@@ -65,7 +65,13 @@ document.addEventListener('click', function (e) {
   var el = e.target.closest('[data-pixel]');
   if (el) fbq('track', el.dataset.pixel, JSON.parse(el.dataset.pixelDados || '{}'));
 });
-</script>`;
+</script>${analytics()}`;
+}
+
+// Cloudflare Web Analytics: visitantes quase em tempo real (painel da Cloudflare > Web Analytics)
+function analytics() {
+  if (!config.cloudflareAnalytics) return "";
+  return `\n<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${esc(config.cloudflareAnalytics)}"}'></script>`;
 }
 
 function pagina({ raiz, titulo, descricao, imagem, url, corpo, extraHead = "" }) {
