@@ -81,12 +81,14 @@ function pagina({ raiz, titulo, descricao, imagem, url, corpo, extraHead = "" })
 <meta property="og:type" content="website">
 <meta property="og:url" content="${URL_BASE}/${url}">
 ${imagem ? `<meta property="og:image" content="${URL_BASE}/${imagem}">` : ""}
-<meta name="theme-color" content="#c8205f">
+<meta name="theme-color" content="#b1365b">
+<link rel="icon" type="image/png" sizes="32x32" href="${raiz}marca/favicon-32.png">
+<link rel="apple-touch-icon" href="${raiz}marca/apple-touch-icon.png">
 <link rel="stylesheet" href="${raiz}estilo.css">
 ${pixel()}${extraHead}
 </head>
 <body>
-<header class="topo"><a class="marca" href="${raiz}">moderninha <span>móveis</span></a></header>
+<header class="topo"><a class="marca" href="${raiz}"><img src="${raiz}marca/logo.png" alt="Moderninha Móveis Essenciais" width="186" height="44"></a></header>
 ${corpo}
 <footer class="rodape">
   <p>Moderninha Móveis · <a href="https://www.instagram.com/${INSTAGRAM}/">@${INSTAGRAM}</a></p>
@@ -131,16 +133,16 @@ ${itens.map(card).join("\n")}
     .join("\n  ");
   return pagina({
     raiz: "",
-    titulo: "Ofertas | Moderninha Móveis",
+    titulo: "Moderninha Móveis | Ofertas em até 12x sem juros",
     descricao: "Ofertas da Moderninha Móveis em até 12x sem juros, com entrega em Recife e região metropolitana.",
     imagem: fotosDe(produtos[ofertas[0].codigo])[0],
     url: "",
-    corpo: `<nav class="atalhos" aria-label="Categorias">${atalhos}</nav>
+    corpo: `<section class="faixa">
+  <h1>Ofertas Moderninha</h1>
+  <p>Em até <strong>12x sem juros</strong> no Mercado Pago. Frete de ${moeda(FRETE)} para Recife e região metropolitana.</p>
+</section>
+<nav class="atalhos" aria-label="Categorias">${atalhos}</nav>
 <main class="conteudo">
-  <section class="chamada">
-    <h1>Ofertas Moderninha</h1>
-    <p>Em até 12x sem juros no Mercado Pago. Frete de ${moeda(FRETE)} para Recife e região metropolitana.</p>
-  </section>
   ${secoes}
   ${blocoEntrega()}
 </main>`,
